@@ -1,0 +1,16 @@
+/* Keep the event accent inside the printable safe area. */
+@media print {
+  .print-sheet.template-nagare::before {
+    inset: 3% var(--sheet-pad) auto;
+    width: auto;
+    height: 5px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .print-sheet.template-nagare .nagare-mark,
+  .print-sheet.template-nagare .sheet-footer {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

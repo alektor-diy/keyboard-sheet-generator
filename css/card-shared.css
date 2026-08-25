@@ -1,0 +1,13 @@
+/* Shared card typography and proportions. Screen and print use the same inner layout. */
+.field-hint{font-size:.68rem;color:var(--muted);text-align:right}
+.sheet-card .sheet-top{position:static}
+.sheet-card .sheet-name{font-size:24pt}
+.sheet-card .sheet-exhibitor{font-size:9pt}
+.sheet-card .meta-label,.sheet-card .permission-label{font-size:6pt}
+.sheet-card .meta-value,.sheet-card .permission{font-size:9pt}
+.sheet-card .sheet-description{font-size:9pt;line-height:1.45;padding:2.5% 0 4.5%}
+.sheet-card .sheet-footer{font-size:5pt}
+.sheet-description.small{font-size:8pt}.sheet-description.smaller{font-size:7pt}.sheet-description.minimum{font-size:6pt;line-height:1.3}
+.template-nagare .nagare-logo,.print-sheet.template-nagare .nagare-logo{top:11%;right:var(--sheet-pad);bottom:auto;width:15%;max-height:none}
+.template-nagare .sheet-name,.print-sheet.template-nagare .sheet-name{padding-right:23%}
+.template-nagare .sheet-footer{display:none}

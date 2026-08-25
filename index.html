@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="キーボード展示用の紹介シートをかんたんに作成・印刷できます。">
+  <title>Keyboard Sheet Generator</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/print.css">
+  <link rel="stylesheet" href="css/print-fix.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/card-shared.css">
+</head>
+<body>
+  <header class="app-header">
+    <div><h1>Keyboard Sheet Generator</h1><p>キーボード展示用の紹介シートをかんたんに作成・印刷できます。</p></div>
+    <div class="privacy-note">入力内容はこのブラウザ内にのみ保存され、外部へ送信されません。</div>
+  </header>
+  <main class="workspace">
+    <section class="panel editor-panel" aria-labelledby="editor-title">
+      <div class="panel-heading"><div><p class="eyebrow">EDITOR</p><h2 id="editor-title">紹介シートを作成</h2></div></div>
+      <fieldset class="template-picker"><legend>テンプレート</legend><label class="template-option"><input type="radio" name="template" value="blank" checked> <span>基本デザイン</span><small>汎用テンプレート</small></label><label class="template-option"><input type="radio" name="template" value="nagare"> <span>ながれキー</span><small>イベントカラー</small></label></fieldset>
+      <form id="sheet-form" novalidate>
+        <div class="form-grid">
+          <label>キーボード名<input id="keyboardName" name="keyboardName" maxlength="80" placeholder="例：Ergodox mini"></label>
+          <label>展示者名 / ハンドルネーム<input id="exhibitor" name="exhibitor" maxlength="80" placeholder="例：keyboard_fan"></label>
+          <label>キースイッチ<input id="switchName" name="switchName" maxlength="80" placeholder="例：Gateron Oil King"></label>
+          <label>キーキャップ<input id="keycaps" name="keycaps" maxlength="80" placeholder="例：GMK botanical"></label>
+        </div>
+        <div class="choice-grid">
+          <fieldset><legend>試し打ち</legend><label><input type="radio" name="typing" value="ok"> OK</label><label><input type="radio" name="typing" value="ng"> NG</label><label><input type="radio" name="typing" value="ask"> 声かけて</label></fieldset>
+          <fieldset><legend>撮影・SNS投稿</legend><label><input type="radio" name="photo" value="ok"> OK</label><label><input type="radio" name="photo" value="ng"> NG</label></fieldset>
+        </div>
+        <label>自由記入欄<textarea id="description" name="description" maxlength="1200" rows="5" placeholder="このキーボードの紹介や、こだわりポイントなど"></textarea><small class="field-hint"><span id="description-count" aria-live="polite">0 / 250</span> 文字以内・改行を含めて4行以内</small></label>
+        <p id="description-warning" class="warning" role="alert" hidden>紹介文が長すぎます。250文字以内を目安に、少し短くしてください。</p>
+        <div class="actions"><button type="submit" class="primary">シートを保存</button><button type="button" id="new-sheet">新しく追加</button></div>
+      </form>
+      <div class="print-actions"><h3>印刷</h3><div class="button-row"><button type="button" id="print-single">紹介シートを印刷</button><button type="button" id="print-all">A4・4面付け印刷</button><button type="button" id="print-blank">空欄シートを印刷</button></div><p class="hint">印刷設定では倍率100%、余白なしを推奨します。</p></div>
+      <div class="saved-sheets"><div class="list-heading"><h3>作成済みシート</h3><button type="button" id="clear-all" class="quiet danger">すべてクリア</button></div><div id="sheet-list" class="sheet-list"></div></div>
+    </section>
+    <section class="preview-column" aria-labelledby="preview-title"><div class="preview-label"><p class="eyebrow">PREVIEW</p><h2 id="preview-title">A6 横プレビュー</h2></div><div id="preview-card" class="sheet-card template-blank" aria-label="紹介シートプレビュー"></div></section>
+  </main>
+  <div id="print-root" aria-hidden="true"></div>
+  <script src="js/storage.js"></script><script src="js/card.js"></script><script src="js/print.js"></script><script src="js/app.js"></script>
+</body>
+</html>
