@@ -1,4 +1,6 @@
 .list-actions{display:flex;gap:2px;align-items:center;flex-wrap:wrap}
+.event-logo-toggle{display:flex;align-items:center;gap:6px;margin:-10px 0 18px;font-size:.78rem;color:var(--muted)}
+.event-logo-toggle input{margin:0}
 .sheet-row{grid-template-columns:22px 1fr auto auto auto}
 .sheet-row input{margin:0}
 @media(max-width:560px){
