@@ -1,9 +1,10 @@
 /* Shared card typography and proportions. Screen and print use the same inner layout. */
 .field-hint{font-size:.68rem;color:var(--muted);text-align:right}
 .sheet-card .sheet-top{position:static}
-.sheet-card .sheet-top{flex:0 0 25%;height:25%;min-height:25%;overflow:hidden}
+.sheet-card .sheet-top{flex:0 0 25%;height:25%;min-height:25%;overflow:visible}
 .sheet-card .sheet-top{display:grid;grid-template-rows:minmax(0,58%) minmax(0,42%);padding-bottom:0}
 .sheet-card .sheet-name{height:auto;min-height:0;margin:0;overflow:hidden}
+.sheet-card .sheet-name{position:relative;top:-6px}
 .sheet-card .sheet-exhibitor{height:auto;min-height:0;overflow:hidden}
 .sheet-card .sheet-meta{flex:0 0 18%;height:18%;min-height:18%}
 .sheet-card .sheet-description{flex:1 1 auto}
@@ -12,9 +13,11 @@
 .sheet-card .sheet-name.name-small{font-size:20pt}.sheet-card .sheet-name.name-smaller{font-size:17pt}.sheet-card .sheet-name.name-minimum{font-size:15pt}
 .sheet-card .sheet-name.name-single-line{white-space:nowrap}
 .sheet-card .sheet-exhibitor{font-size:9pt}
+.sheet-card .exhibitor-label{position:relative;top:-2px}
+.sheet-card .exhibitor-value{position:relative;top:-4px}
 .sheet-card .meta-label,.sheet-card .permission-label{font-size:6pt}
 .sheet-card .meta-value,.sheet-card .permission{font-size:9pt}
-.sheet-card .meta-value{position:relative;top:-2px}
+.sheet-card .meta-value{position:relative;top:-4px}
 .sheet-card .sheet-description{font-size:9pt;line-height:1.45;padding:2.5% 0 4.5%}
 .preview-stage{width:min(100%,760px);margin:0 auto;aspect-ratio:279/191;overflow:hidden}
 .preview-stage .sheet-card{width:calc((297mm - 2 * 7mm - 4mm) / 2);height:calc((210mm - 2 * 7mm - 4mm) / 2);aspect-ratio:auto;transform:scale(var(--preview-scale,1));transform-origin:top left;box-shadow:var(--shadow);border-radius:4px}
