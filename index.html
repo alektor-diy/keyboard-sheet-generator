@@ -19,7 +19,7 @@
   <main class="workspace">
     <section class="panel editor-panel" aria-labelledby="editor-title">
       <div class="panel-heading"><div><p class="eyebrow">EDITOR</p><h2 id="editor-title">紹介シートを作成</h2></div></div>
-      <fieldset class="template-picker"><legend>テンプレート</legend><label class="template-option"><input type="radio" name="template" value="blank" checked> <span>基本デザイン</span></label><label class="template-option"><input type="radio" name="template" value="nagare"> <span>ながれキー</span></label></fieldset>
+      <fieldset class="template-picker"><legend>テンプレート</legend><label class="template-option"><input type="radio" name="template" value="blank" checked> <span>基本デザイン</span></label><label class="template-option"><input type="radio" name="template" value="nagare"> <span>ながれキー</span></label><label class="template-option"><input type="radio" name="template" value="tenkey"> <span>天キーVol.12</span></label></fieldset>
       <form id="sheet-form" novalidate>
         <div class="form-grid">
           <label>キーボード名<input id="keyboardName" name="keyboardName" maxlength="80"></label>
@@ -35,7 +35,7 @@
         <p id="description-warning" class="warning" role="alert" hidden>紹介文が長すぎます。250文字以内を目安に、少し短くしてください。</p>
         <div class="actions"><button type="submit" class="primary">シートを保存</button><button type="button" id="new-sheet">新しく追加</button></div>
       </form>
-      <div class="print-actions"><h3>印刷</h3><div class="button-row"><button type="button" id="print-single">紹介シートを印刷</button><button type="button" id="print-all">A4・4面付け印刷</button><button type="button" id="print-blank">空欄シートを印刷</button></div><p class="hint">印刷設定では倍率100%、余白なしを推奨します。</p></div>
+      <div class="print-actions"><h3>印刷</h3><div class="button-row"><button type="button" id="print-all">A4・4面付け印刷</button><button type="button" id="print-blank">空欄シートを印刷</button></div><p class="hint">印刷設定では倍率100%、A4横、余白なしを推奨します。</p></div>
       <div class="saved-sheets"><div class="list-heading"><h3>作成済みシート</h3><button type="button" id="clear-all" class="quiet danger">すべてクリア</button></div><div id="sheet-list" class="sheet-list"></div></div>
     </section>
     <section class="preview-column" aria-labelledby="preview-title"><div class="preview-label"><p class="eyebrow">PREVIEW</p><h2 id="preview-title">A6 横プレビュー</h2></div><div id="preview-card" class="sheet-card template-blank" aria-label="紹介シートプレビュー"></div></section>
