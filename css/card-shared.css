@@ -2,6 +2,8 @@
 .field-hint{font-size:.68rem;color:var(--muted);text-align:right}
 .sheet-card .sheet-top{position:static}
 .sheet-card .sheet-name{font-size:24pt}
+.sheet-card .sheet-name.name-small{font-size:20pt}.sheet-card .sheet-name.name-smaller{font-size:17pt}.sheet-card .sheet-name.name-minimum{font-size:15pt}
+.sheet-card .sheet-name.name-single-line{white-space:nowrap}
 .sheet-card .sheet-exhibitor{font-size:9pt}
 .sheet-card .meta-label,.sheet-card .permission-label{font-size:6pt}
 .sheet-card .meta-value,.sheet-card .permission{font-size:9pt}
@@ -9,6 +11,6 @@
 .sheet-card .sheet-footer{font-size:5pt}
 .sheet-description.small{font-size:8pt}.sheet-description.smaller{font-size:7pt}.sheet-description.minimum{font-size:6pt;line-height:1.3}
 .template-nagare .nagare-logo,.print-sheet.template-nagare .nagare-logo{top:11%;right:var(--sheet-pad);bottom:auto;width:15%;max-height:none}
-.template-nagare .sheet-name,.print-sheet.template-nagare .sheet-name{padding-right:23%}
+.template-nagare .sheet-name,.print-sheet.template-nagare .sheet-name{width:72%;max-width:72%;padding-right:0}
 .template-nagare .sheet-footer{display:none}
-.tenkey-mark{display:none}.template-tenkey:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:7px;background:linear-gradient(90deg,#ed2aa9 0%,#be2bd0 47%,#9a32ee 73%,#3e86f6 100%);-webkit-print-color-adjust:exact;print-color-adjust:exact}.template-tenkey .tenkey-mark{display:block;position:absolute;top:11%;right:var(--sheet-pad);font-size:clamp(.8rem,1.5vw,1.25rem);font-weight:900;letter-spacing:.03em;background:linear-gradient(105deg,#e328a7,#a42ee8 65%,#3d83f3);-webkit-background-clip:text;background-clip:text;color:transparent}.template-tenkey .sheet-name,.print-sheet.template-tenkey .sheet-name{padding-right:23%}.template-tenkey .sheet-top{border-bottom-color:#b42ed5}.print-sheet.template-tenkey .tenkey-mark{font-size:11pt}
+.tenkey-mark{display:none}.template-tenkey:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:7px;background:linear-gradient(90deg,#ed2aa9 0%,#be2bd0 47%,#9a32ee 73%,#3e86f6 100%);-webkit-print-color-adjust:exact;print-color-adjust:exact}.template-tenkey .tenkey-mark{display:block;position:absolute;top:11%;right:var(--sheet-pad);font-size:clamp(.8rem,1.5vw,1.25rem);font-weight:900;letter-spacing:.03em;background:linear-gradient(105deg,#e328a7,#a42ee8 65%,#3d83f3);-webkit-background-clip:text;background-clip:text;color:transparent}.template-tenkey .sheet-name,.print-sheet.template-tenkey .sheet-name{width:72%;max-width:72%;padding-right:0}.template-tenkey .sheet-top{border-bottom-color:#b42ed5}.print-sheet.template-tenkey .tenkey-mark{font-size:11pt}
