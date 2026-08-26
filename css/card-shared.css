@@ -4,7 +4,7 @@
 .sheet-card .sheet-top{flex:0 0 25%;height:25%;min-height:25%;overflow:visible}
 .sheet-card .sheet-top{display:grid;grid-template-rows:minmax(0,58%) minmax(0,42%);padding-bottom:0}
 .sheet-card .sheet-name{height:auto;min-height:0;margin:0;overflow:hidden}
-.sheet-card .sheet-name{position:relative;top:-6px}
+.sheet-card .sheet-name{position:relative;top:-12px}
 .sheet-card .sheet-exhibitor{height:auto;min-height:0;overflow:hidden}
 .sheet-card .sheet-meta{flex:0 0 18%;height:18%;min-height:18%}
 .sheet-card .sheet-description{flex:1 1 auto}
