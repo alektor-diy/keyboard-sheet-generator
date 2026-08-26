@@ -24,10 +24,9 @@
         <div class="form-grid">
           <label>キーボード名<input id="keyboardName" name="keyboardName" maxlength="80"></label>
           <label>展示者名 / ハンドルネーム<input id="exhibitor" name="exhibitor" maxlength="80"></label>
-          <label>キースイッチ<input id="switchName" name="switchName" maxlength="80"><small class="field-hint"><span id="switch-count">0 / 32</span> 半角換算</small></label>
-          <label>キーキャップ<input id="keycaps" name="keycaps" maxlength="80"><small class="field-hint"><span id="keycaps-count">0 / 32</span> 半角換算</small></label>
+          <label>キースイッチ<input id="switchName" name="switchName"></label>
+          <label>キーキャップ<input id="keycaps" name="keycaps"></label>
         </div>
-        <p id="spec-warning" class="warning" role="alert" hidden>キースイッチとキーキャップは、それぞれ半角換算32文字以内で入力してください。</p>
         <div class="choice-grid">
           <fieldset><legend>試し打ち</legend><label><input type="radio" name="typing" value="ok"> OK</label><label><input type="radio" name="typing" value="ng"> NG</label><label><input type="radio" name="typing" value="ask"> 声かけて</label></fieldset>
           <fieldset><legend>撮影・SNS投稿</legend><label><input type="radio" name="photo" value="ok"> OK</label><label><input type="radio" name="photo" value="ng"> NG</label></fieldset>
