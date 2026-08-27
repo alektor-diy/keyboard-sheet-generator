@@ -1,11 +1,22 @@
 .list-actions{display:flex;gap:2px;align-items:center;flex-wrap:wrap}
+.template-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+.template-picker legend{grid-column:1/-1}
 .event-logo-toggle{display:flex;align-items:center;gap:6px;margin:-10px 0 18px;font-size:.78rem;color:var(--muted)}
 .event-logo-toggle input{margin:0}
 .privacy-note{max-width:none;white-space:nowrap}
+.ttt-logo{display:none}
+.template-ttt:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:7px;background:linear-gradient(90deg,#000 0 50%,#d9dddc 50% 100%);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.template-ttt .ttt-logo{display:block;position:absolute;right:var(--sheet-pad);top:40px;width:clamp(60px,11vw,85px);height:auto;max-height:none;object-fit:contain;object-position:top right}
+.template-ttt .sheet-name{width:72%;max-width:72%;padding-right:0}
+@media print{
+  .print-sheet.template-ttt .ttt-logo{display:block;top:40px;right:var(--sheet-pad);width:clamp(60px,11vw,85px);max-height:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
 .sheet-row{grid-template-columns:22px 1fr auto auto auto}
 .sheet-row input{margin:0}
 @media(max-width:560px){
   .privacy-note{white-space:normal}
+  .template-picker{grid-template-columns:1fr}
+  .template-picker legend{grid-column:auto}
   .list-heading{align-items:flex-start;flex-direction:column}
   .sheet-row{grid-template-columns:22px 1fr auto auto}
   .sheet-row button:last-child{grid-column:auto}

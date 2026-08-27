@@ -8,7 +8,7 @@
 
 ### できること
 
-- 「基本デザイン」、「ながれキー」、「天キーVol.12」のテンプレート選択
+- 「基本デザイン」、「ながれキー」、「天キーVol.12」、「Touch,Type＆Talkey」のテンプレート選択
 - 入力内容のリアルタイムプレビュー
 - 複数キーボード分のシート作成、編集、複製、削除
 - 印刷対象の個別選択、すべて選択、すべて解除
@@ -65,8 +65,9 @@ js/
   card.js             プレビュー・印刷で共通利用するカード生成
   print.js            印刷モード切り替え
   storage.js          localStorage保存
-assets/
+  assets/
   nagare-key/logo.png ながれキーのロゴ
+  Touch-Type-Talkey/ttt_logo.png TTTのロゴ
 ```
 
 ### 新しいテンプレートを追加する場合
