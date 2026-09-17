@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/print-fix.css">
   <link rel="stylesheet" href="css/logo.css">
   <link rel="stylesheet" href="css/card-shared.css">
+  <link rel="stylesheet" href="css/features.css">
 </head>
 <body>
   <header class="app-header">
@@ -28,6 +29,7 @@
           <label>キースイッチ<input id="switchName" name="switchName"></label>
           <label>キーキャップ<input id="keycaps" name="keycaps"></label>
         </div>
+        <label class="feature-field">キーボードの特徴<input id="feature" name="feature" maxlength="160" placeholder="日本語配列 / 狭ピッチ / ロープロファイル"><small class="field-hint">「/」区切りで入力すると、プレビューでは自動的にタグ表示されます。表示は最大3個までです。</small></label>
         <div class="choice-grid">
           <fieldset><legend>試し打ち</legend><label><input type="radio" name="typing" value="ok"> OK</label><label><input type="radio" name="typing" value="ng"> NG</label><label><input type="radio" name="typing" value="ask"> 声かけて</label></fieldset>
           <fieldset><legend>撮影・SNS投稿</legend><label><input type="radio" name="photo" value="ok"> OK</label><label><input type="radio" name="photo" value="ng"> NG</label></fieldset>
