@@ -1,5 +1,5 @@
 (function(){
-  const state=SheetStorage.load();let activeId=state.current.id;const selectedIds=new Set(state.sheets.map(sheet=>sheet.id));const $=id=>document.getElementById(id);const form=$('sheet-form');const fields=['keyboardName','exhibitor','switchName','keycaps','feature','description'];
+  const state=SheetStorage.load();let activeId=state.current.id;const selectedIds=new Set(state.sheets.map(sheet=>sheet.id));const $=id=>document.getElementById(id);const form=$('sheet-form');const fields=['keyboardName','exhibitor','switchName','keycaps','description'];
   function current(){const sheet={...state.current};fields.forEach(key=>sheet[key]=$(key).value);sheet.typing=form.querySelector('[name=typing]:checked')?.value||'';sheet.photo=form.querySelector('[name=photo]:checked')?.value||'';sheet.id=activeId;return sheet;}
   function put(sheet){state.current={...SheetStorage.blankSheet(),...sheet};activeId=sheet.id||null;fields.forEach(key=>$(key).value=state.current[key]||'');['typing','photo'].forEach(name=>form.querySelectorAll(`[name=${name}]`).forEach(radio=>radio.checked=radio.value===state.current[name]));render();}
   function save(){state.current=current();SheetStorage.save(state);}

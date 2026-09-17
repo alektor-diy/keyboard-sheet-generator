@@ -1,9 +1,0 @@
-.feature-field{font-size:.76rem;color:var(--muted);display:grid;gap:6px;margin-top:16px}.feature-field .field-hint{text-align:left}
-.sheet-card .sheet-features{position:absolute;right:var(--sheet-pad);bottom:3%;z-index:2;max-width:45%;overflow:hidden}
-.sheet-card .feature-tags{display:flex;flex-wrap:nowrap;justify-content:flex-end;gap:3px 4px;overflow:hidden}
-.sheet-card .feature-tag{display:block;flex:0 1 auto;min-width:0;max-width:11em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border:1px solid #a9d9d4;border-radius:999px;padding:.28em .58em;color:#16756e;background:#edf9f7;font-size:7pt;line-height:1.1}
-.template-blank .feature-tag,.template-ttt .feature-tag{border-color:var(--ink);color:var(--ink);background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.template-tenkey .feature-tag{border-color:#b42ed5;color:#b42ed5;background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.template-nagare .feature-tag{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.template-nagare .feature-tag{font-weight:400;color:#256f6a;background:#fff;border:1px solid #256f6a;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-@media(max-width:560px){.feature-field{margin-top:0}}
