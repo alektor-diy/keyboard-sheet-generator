@@ -6,10 +6,10 @@
 .privacy-note{max-width:none;white-space:nowrap}
 .ttt-logo{display:none}
 .template-ttt:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:7px;background:linear-gradient(90deg,#000 0 50%,#d9dddc 50% 100%);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.template-ttt .ttt-logo{display:block;position:absolute;right:var(--sheet-pad);top:40px;width:clamp(60px,11vw,85px);height:auto;max-height:none;object-fit:contain;object-position:top right}
+.template-ttt .ttt-logo{display:block;position:absolute;right:var(--sheet-pad);top:40px;width:15mm;height:auto;max-height:none;object-fit:contain;object-position:top right}
 .template-ttt .sheet-name{width:72%;max-width:72%;padding-right:0}
 @media print{
-  .print-sheet.template-ttt .ttt-logo{display:block;top:40px;right:var(--sheet-pad);width:clamp(60px,11vw,85px);max-height:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .print-sheet.template-ttt .ttt-logo{display:block;top:40px;right:var(--sheet-pad);width:15mm;max-height:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 .sheet-row{grid-template-columns:22px 1fr auto auto auto}
 .sheet-row input{margin:0}
