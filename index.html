@@ -16,7 +16,7 @@
 <body>
   <header class="app-header">
     <div><h1>Keyboard Sheet Generator</h1><p>キーボード展示用の紹介シートをかんたんに作成・印刷できます。</p></div>
-    <div class="privacy-note">入力内容はこのブラウザ内にのみ保存され、外部へ送信されません。</div>
+    <div class="data-tools"><span>データ管理</span><div><button type="button" id="export-data">エクスポート</button><button type="button" id="import-data">インポート</button><input type="file" id="import-file" accept="application/json,.json" hidden></div></div>
   </header>
   <main class="workspace">
     <section class="panel editor-panel" aria-labelledby="editor-title">
@@ -37,11 +37,11 @@
         <label>自由記入欄<textarea id="description" name="description" rows="5" placeholder="このキーボードの紹介や、こだわりポイントなど"></textarea><small class="field-hint">5行以内に収まるように調整してください。</small></label>
         <div class="actions"><button type="submit" class="primary">シートを保存</button><button type="button" id="new-sheet">新しく追加</button></div>
       </form>
-      <div class="print-actions"><h3>印刷</h3><div class="button-row"><button type="button" id="print-all">A4・4面付け印刷</button><button type="button" id="print-blank">空欄シートを印刷</button></div><p class="hint">A4・4面付け印刷は、保存済みシートが対象です。入力後に「シートを保存」してから印刷してください。</p><p class="hint">印刷設定では倍率100%、A4横、余白なしを推奨します。</p></div>
       <div class="saved-sheets"><div class="list-heading"><h3>作成済みシート</h3><div class="list-actions"><button type="button" id="select-all" class="quiet">すべて選択</button><button type="button" id="deselect-all" class="quiet">すべて解除</button><button type="button" id="clear-all" class="quiet danger">すべてクリア</button></div></div><div id="sheet-list" class="sheet-list"></div></div>
     </section>
-    <section class="preview-column" aria-labelledby="preview-title"><div class="preview-label"><p class="eyebrow">PREVIEW</p><h2 id="preview-title">A6 横プレビュー</h2></div><div id="preview-stage" class="preview-stage"><div class="preview-frame"><div id="preview-card" class="sheet-card print-sheet template-blank" aria-label="紹介シートプレビュー"></div></div></div></section>
+    <section class="preview-column" aria-labelledby="preview-title"><div class="preview-label"><p class="eyebrow">PREVIEW</p><h2 id="preview-title">A6 横プレビュー</h2></div><div id="preview-stage" class="preview-stage"><div class="preview-frame"><div id="preview-card" class="sheet-card print-sheet template-blank" aria-label="紹介シートプレビュー"></div></div></div><div class="print-actions"><h3>印刷</h3><div class="button-row"><button type="button" id="print-all">A4・4面付け印刷</button><button type="button" id="print-blank">空欄シートを印刷</button></div><p class="hint">A4・4面付け印刷は、「作成済みシート」欄の中で選択されたシートが印刷されます。</p><p class="hint">印刷設定では倍率100%、A4横、余白なしを推奨します。</p></div></section>
   </main>
+  <footer class="privacy-note">入力内容はこのブラウザ内にのみ保存され、外部へ送信されません。</footer>
   <div id="print-root" aria-hidden="true"></div>
   <script src="js/storage.js"></script><script src="js/card.js"></script><script src="js/print.js"></script><script src="js/app.js"></script>
 </body>
